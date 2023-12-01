@@ -1,0 +1,19 @@
+[資料夾說明]
+runs用來存放訓練好的模型(.pt檔)：
+路徑 >> runs/detect/train13/weights/best.pt
+
+其他所有 資料夾 跟 不在資料夾內的檔案 是YOLO的官方檔案，
+我們的app不會直接調用到，
+不要動它們!!!
+
+[app說明]
+app.py就是用來架網站的code，
+裡面的cfg_model_path就是用來導向模型的路徑。
+
+如果要打開網站，需要先從cmd打開這份資料夾(Recipe_YOLOv8)，
+然後輸入python -m streamlit run app.py
+之後就可以上傳照片，並跑出偵測後的結果。
+
+[重要事項]
+requirements是用來跑YOLOv8模型的套件配置，
+在跑程式之前要確定你的python環境有安裝符合版本需求的套件。
